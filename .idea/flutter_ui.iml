@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_12/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_12/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_11/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_11/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_4/flutter_ui_4/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_4/flutter_ui_4/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_16/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_16/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_10/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_10/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_6/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_6/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_9/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_9/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_13/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_13/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_5/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_5/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_8/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_8/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_14/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_14/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_3/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_3/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui/build" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_15/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/flutter_ui_15/build" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
