@@ -13,6 +13,7 @@ class AuthBloc {
 
 
   Stream<User?> get currentUserFacebook => authService.currentUserFacebook;
+  Stream<User?> get currentUserGoogle => authService.currentUserGoogle;
 
   //Google:---------------------------------------------------------------------
   loginGoogle() async {

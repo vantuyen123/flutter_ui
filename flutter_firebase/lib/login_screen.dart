@@ -16,20 +16,26 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-
   late StreamSubscription<User?> loginStateSubscription;
   late StreamSubscription<User?> loginStateSubscriptionFacebook;
 
-
   @override
   void initState() {
-    var authBloc = Provider.of<AuthBloc>(context,listen: false);
+    var authBloc = Provider.of<AuthBloc>(context, listen: false);
+    loginStateSubscription = authBloc.currentUserGoogle.listen(
+      (event) {
+        if (event != null) {
+          Navigator.of(context).pushReplacement(
+              MaterialPageRoute(builder: (context) => HomeGoogleScreen()));
+        }
+      },
+    );
 
-    loginStateSubscriptionFacebook = authBloc.currentUserFacebook.listen((event) {
-      if(event != null){
+    loginStateSubscriptionFacebook =
+        authBloc.currentUserFacebook.listen((event) {
+      if (event != null) {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => HomeFacebookScreen())
-        );
+            MaterialPageRoute(builder: (context) => HomeFacebookScreen()));
       }
     });
     super.initState();
@@ -38,6 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   void dispose() {
     loginStateSubscriptionFacebook.cancel();
+    loginStateSubscription.cancel();
     super.dispose();
   }
 
@@ -48,6 +55,12 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Center(
+            child: SignInButton(
+              Buttons.Google,
+              onPressed: () => authBloc.loginGoogle(),
+            ),
+          ),
           Center(
             child: SignInButton(
               Buttons.Facebook,
